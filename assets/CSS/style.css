@@ -30,7 +30,7 @@ button{
 /* nav */
 nav {
     background-color: #0B9586;
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
     font-size: xx-small;
