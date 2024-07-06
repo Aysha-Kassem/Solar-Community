@@ -79,7 +79,7 @@ nav {
 
  /* header */
  header{
-    background-image: url("/assets/IMG/header.png");
+    background-image: url("assets/IMG/header.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
