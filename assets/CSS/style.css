@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+
+}
+button{
+    width: 200px; 
+    font-size: xx-small;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Img full screen to use onClick any img */
+.fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    object-fit: contain;
+}
+
+
+/* nav */
+nav {
+    background-color: #0B9586;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-small;
+    padding: 10px 5px;
+    color: white;
+    position: relative;
+    border-bottom: black solid 1px;
+}
+.nav_page{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.nav_page a{
+    padding: 3px 10px;
+    color: white;
+    text-decoration: none;
+ }
+ .nav_page a:hover {
+    background-color: #0A8C7E;
+    border-radius: 2px;
+    font-weight: bold;
+    box-shadow: 0px 1px #076258;
+ }
+#list{
+    display: none;
+    gap: 5px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 101%;
+    right: 0%;
+    left: 0%;
+    background-color: #0B9586;
+    padding: 10%;
+}
+#list a{
+    padding: 3px 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #82cec5;
+ }
+
+
+
+ /* header */
+ header{
+    background-image: url("/assets/IMG/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 10%;
+    padding-bottom: 10%;
+    color: white;
+    display: grid;
+    gap: 20px;
+ }
+ header div:last-child{
+    max-width: 60%;
+    display: grid;
+    gap: 10px;
+ }
+ header>div:last-child h1{font-size: small;}
+ header>div:last-child p{font-size: xx-small; width: 80%;}
+
+
+
+ /* main */
+ /* section 1 */
+ .section1{padding: 5% 10%;}
+ .section1>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ }
+ .section1 .text{
+     display: grid;
+     gap: 20px;
+    }
+.section1 .text h2{ font-weight: 600; font-size: large;}
+.line{
+    display: flex;
+    gap: 5px;
+    font-size: small;
+    font-weight: 600;
+ }
+ .section1 .img{
+    width: 100%;
+    position: relative;
+    padding-left: 15%;
+}
+ .section1_box{
+    background-color: #FFBB1C;
+    border-radius: 5px;
+    padding: 3% 5%;
+    font-size: xx-small;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+/* section 2 */
+.section2{
+      background-image: url("/assets/IMG/section2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 5% 10%;
+}
+.section2 div{
+        display: grid;
+        gap: 10px;
+        max-width: 70%;
+        padding: 7% 0%;
+        color: white;
+}
+.section2 div h2{font-size: small;}
+.section2 div p{font-size: x-small;}
+.section2 div button{
+    background-color: #FFBB1C;
+    width: 50%;
+}
+
+/* section 3 */
+.section3 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: x-small;
+    padding: 5% 10%;
+}
+.section3 .boxs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section3 .box{
+    display: grid;
+    gap: 10px;
+    text-align: start;
+    box-shadow: 5px 5px 10px #F8F8F8;
+}
+.section3 .box>div{
+    padding: 5%;
+    display: grid;
+    gap: 10px;
+
+}
+
+
+/* section 4 */
+.section4 {
+    background-image: url("/assets/IMG/section4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 15% 5%;
+}
+.section4 div{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    color: white;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.744);
+    border-radius: 10px;
+}
+.section4 div h2{ font-size: small;}
+.section4 div p{ font-size: 7px;}
+
+/* section 5 */
+.section5 {
+    padding: 10% 10% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFFBF3;
+}
+.icon_box{
+    background-color: #E2F0E5;
+    border-radius: 5px;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.section5 .icon{
+    background-color: #3CAB90;
+    color: white;
+    padding: 20%;
+    border-radius: 5px;
+}
+.section5 h2{font-size: large;}
+.section5 h2{font-size: large;}
+.section5 p{font-size: xx-small;}
+.section5 img{width: 100%;}
+.section5 .boxs{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.section5 .boxs>div{display: grid; gap: 20px;}
+.section5 .boxs>div>div{
+    padding: 5%;
+    border: #3CAB90 solid 1px;
+    border-radius: 4px;
+    display: grid;
+    gap: 10px;
+}
+.section5 .boxs>div>div>div{
+    display: grid;
+    gap: 5px;
+}
+
+/* section 6 */
+.section6{
+    padding: 10% 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.section6 .text {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+.section6 .text h2{font-size: larger;}
+.section6 .text p{font-size: x-small;}
+.section6 .boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section6 .boxs>div{
+    background-color: #F5FBF9;
+    padding: 5%;
+    border: #3CAB90 solid 1px;
+    border-radius: 4px;
+    display: flex;
+    gap: 15px;
+}
+.section6 .boxs h6{font-size: x-small;}
+.section6 .boxs p{font-size: xx-small;}
+
+/* section 7*/
+.section7{
+    padding: 10% 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.section7 .text h2{font-size: medium;}
+.section7 .text p{font-size: small;}
+
+/* footer */
+footer{
+    background-color: #283646;
+    padding: 10% 10% 5%;
+    color: white;
+    font-size: xx-small;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer>div:first-child{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 20px;
+}
+footer .input{
+    background-color:#3B4857;
+    padding: 5px;
+    border: solid white 1px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer button{
+    background-color: #FFBB1C; 
+    width: 90px; 
+    padding: 5px; 
+    position: absolute; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+@media screen and (min-width: 426px) {
+    /* section2 */
+    .section2 div{max-width: 60%;}
+    /* section3 */
+    .section3 .boxs{flex-direction: row; gap: 3%;}
+    
+}
+
+@media screen and (min-width: 500px) {
+    /* nav */
+    nav{font-size: x-small;}
+    .nav_page{display: flex;}
+    .llist{display: none;}
+    /* section1 */
+   .section1 div{flex-direction: row; gap: 5px;}
+   .section1 .text{max-width: 50%;}
+
+    /* section 5 */
+    .section5 {
+        flex-direction: row;
+        align-items: start;
+    }
+    /* section 6 */
+    .section6 .boxs {flex-direction: row;}
+    .section6 .boxs>div{
+     padding: 3%;
+     display: grid;
+     gap: 10px;
+    }
+    /* section 7*/
+    .section7{flex-direction: row;}
+}
+
+@media screen and (min-width: 768px) {
+    /* nav */
+    nav{font-size: small;}
+    /* header */
+    header {gap: 30%;}
+   header div:last-child h1{font-size: x-large;}
+   header div:last-child p{font-size: small;}
+   /* section1 */
+   .section1 div{flex-direction: row; gap: 10%;}
+   .section1 .text{max-width: 45%;}
+   .section1 .text h2{ font-weight: 600; font-size: xx-large;}
+   .section1 .img{padding-left: 0;}
+   .section1_box{left: -10%;}
+    /* section2 */
+    .section2 div{max-width: 50%; gap: 30%;}
+    .section2 div h2{font-size: x-large;}
+    .section2 div p{font-size: small;}
+    .section2 div button{width: 25%;}
+    /* section3 */
+    .section3 div:first-of-type p {font-size: medium;}
+    /* section4 */
+    .section4 {padding: 10% 20% 5%;}
+    .section4 div h2{ font-size: x-large;}
+    .section4 div p{ font-size: medium;}
+    /* section 5 */
+   .section5 h2{font-size: x-large;}
+   .section5 >div:first-child{width: 150%;}
+   /* section 6 */
+   .section6 .text h2{font-size: x-large;}
+   .section6 .text p{font-size: small;}
+   .section6 .boxs h6{font-size: medium;}
+   .section6 .boxs p{font-size: small;}
+   /* section 7*/
+   .section7 .text{width: 150%;}
+   .section7 .text h2{font-size: x-large;}
+   .section7 .text p{font-size: medium;} 
+   /* footer */
+   footer>div:last-child{
+    display: flex;
+    justify-content: space-between;
+   }
+   footer>div:first-child{
+    display: flex; 
+    justify-content: space-between;
+    align-items: end;
+}
+   footer .input{width: 300px;}
+
+
+}
+
+ 
